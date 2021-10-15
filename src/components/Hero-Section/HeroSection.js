@@ -2,7 +2,6 @@ import React from 'react';
 import { Button } from '../Button-SignUp/Button';
 import './HeroSection.css';
 import '../../App.css';
-import video from '../../assets/videos';
 
 function HeroSection() {
 	return (
@@ -13,7 +12,6 @@ function HeroSection() {
 				<Button className="btns" buttonStyle="btn--outline" buttonSize="btn--large">
 					Catalogo
 				</Button>
-
 				<Button className="btns" buttonStyle="btn--primary" buttonSize="btn--large">
 					Ver mas <i class="fas fa-arrow-down"></i>
 				</Button>
