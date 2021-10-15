@@ -6,7 +6,7 @@ import images from '../../assets/images';
 function Cards() {
     return (
         <div className='cards'>
-            <h1>Prodructos</h1>
+            {/* <h1>Productos</h1> */}
             <div className='cards__container'>
                 <div className='cards__wrapper'>
                     <ul className='cards__items'>
@@ -23,7 +23,7 @@ function Cards() {
                         path='/services'
                        />
                     </ul>
-                    <ul className='cards__items'>
+                    {/* <ul className='cards__items'>
                         <CardItem
                         src= {images.img3}
                         text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
@@ -42,7 +42,7 @@ function Cards() {
                         label='Adrenaline'
                         path='/sign-up'
                         />
-                    </ul>
+                    </ul> */}
                 </div>
             </div>
         </div>
