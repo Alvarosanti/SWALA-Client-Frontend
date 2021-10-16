@@ -14,9 +14,9 @@ function Home() {
     return (
         <>
             <HeroSection />
-            <Card />
             <ProductSection />
             <FoundersSection />
+            <Card />
             <Footer />
         </>
     )
