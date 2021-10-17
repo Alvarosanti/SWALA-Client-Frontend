@@ -14,10 +14,11 @@ export const ProductSection = () => {
             Brindamos productos de gran variedad, utilizando los mejores
             ingredientes y frutos frescos para satisfacer las necesidades y
             exigencias de nuestros clientes.
-          </p>
-          <Link to="/products" className="product_link">
+            <Link  to="/products" className="product_link">
             Ver más
           </Link>
+          </p>
+          
         </div>
         <div className="box_product_2">
           <div className="product">

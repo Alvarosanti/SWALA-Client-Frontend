@@ -2,12 +2,9 @@ import React from 'react'
 import HeroSection from '../../src/components/Hero-Section/HeroSection';
 import '../../src/App.css';
 import Card from '../../src/components/CardItem/Cards';
-
-
 import { ProductSection } from '../components/Product-Section/ProductSection';
-import { FoundersSection } from '../components/Founders-Section/FoundersSection';
-
 import Footer from '../../src/components/Footer-ContactUs/Footer';
+import  FounderSection  from '../components/Founder-Section/FounderSection';
 
 
 function Home() {
@@ -15,8 +12,8 @@ function Home() {
         <>
             <HeroSection />
             <ProductSection />
-            <FoundersSection />
-            <Card />
+            <FounderSection />
+            {/* <Card /> */}
             <Footer />
         </>
     )

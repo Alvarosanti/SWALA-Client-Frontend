@@ -22,6 +22,14 @@
 	font-style: italic;
 	font-style: normal;
 }
+.box_product_1 > h1 {
+	margin: 0;
+	width: 65%;
+	color: black;
+	display: flex;
+	font-style: italic;
+	font-style: normal;
+}
 
 .box_product_2 {
 	background-color: #c4c4cc;
@@ -43,8 +51,11 @@
 }
 
 .product_link {
+	margin: 0;
 	color: #000;
 	margin-top: 10px;
+	display: flex;
+	text-decoration: none;
 }
 
 .cards_product {
