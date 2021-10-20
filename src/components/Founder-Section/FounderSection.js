@@ -1,33 +1,73 @@
 import React from "react";
 import "./FounderSection.css";
 import images from "../../assets/images";
-import CardFounder from "./CardFounder";
+import { Link } from "react-router-dom";
 
-function FounderSection() {
+const FounderSection = () => {
   return (
-    <div className="founders">
-      <div className="founders__container"> 
-        <div> ⠀</div>
-        <h1>Founders</h1>
-        <div className="founders__wrapper">
-          <ul className="founders__items">
-            <CardFounder
+    <div className="container">
+      <div className="container-1">
+        <div className="titulo-container">
+          <h1> Founders </h1>
+        </div>
+        <div className="container-founder">
+          <div className="founder1">
+            <img
+              className="founders__item__img"
+              alt="Travel"
               src={images.img9}
-              text="Yesennia Santisteban"
-              label=""
-              path="/services"
             />
-            <CardFounder
-              src={images.img2}
-              text="Rosa Santisteban"
-              label=""
-              path="/services"
+            <h3> Rosa Santisteban </h3>
+            <div className="social-icons-wrap">
+              <Link
+                className="social-icon-link-facebook"
+                to="/"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <i className="fab fa-facebook-f" />
+              </Link>
+              <Link
+                className="social-icon-link-instagram"
+                to="/"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i className="fab fa-instagram" />
+              </Link>
+            </div>
+          </div>
+          <div className="founder2">
+            <img
+              className="founders__item__img"
+              alt="Travel"
+              src={images.img9}
             />
-          </ul>
+            <h3> Yesennia Santisteban</h3>
+            <div className="social-icons-wrap">
+              {/* <div classname="social_icons_founder"> */}
+              <Link
+                className="social-icon-link-facebook"
+                to="/"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <i className="fab fa-facebook-f" />
+              </Link>
+              <Link
+                className="social-icon-link-instagram"
+                to="/"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i className="fab fa-instagram" />
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default FounderSection;
