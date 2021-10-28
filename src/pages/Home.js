@@ -1,19 +1,23 @@
 import React from 'react'
-import HeroSection from '../../src/components/Hero-Section/HeroSection';
 import '../../src/App.css';
-import Card from '../../src/components/CardItem/Cards';
+import HeroSection from '../../src/components/Hero-Section/HeroSection';
 import { ProductSection } from '../components/Product-Section/ProductSection';
-import Footer from '../../src/components/Footer-ContactUs/Footer';
 import  FounderSection  from '../components/Founder-Section/FounderSection';
+import  ClientTestimonial  from '../components/ClientTestimonials-Section/ClientTestimonialSection';
+import Card from '../components/CardItem/Cards'
+import Navbar from '../components/Navbar/Navbar';
+import Footer from '../../src/components/Footer-ContactUs/Footer';
 
 
 function Home() {
     return (
         <>
+            <Navbar/>
             <HeroSection />
             <ProductSection />
             <FounderSection />
-            {/* <Card /> */}
+            <ClientTestimonial />
+            <Card />
             <Footer />
         </>
     )

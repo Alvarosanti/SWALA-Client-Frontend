@@ -1,6 +1,16 @@
 import React from "react";
 import '../../src/App.css';
+import ProductCatalog from "../components/ProductCatalog/ProductCatalog";
+import Footer from '../../src/components/Footer-ContactUs/Footer';
 
-export default function Products(){
-    return <h1 className='products'>PRODUCTS</h1>
+function Products(){
+    return(
+        <>
+            <ProductCatalog />
+            <Footer/>
+        </>
+
+    ) 
 }
+
+export default Products

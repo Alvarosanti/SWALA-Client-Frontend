@@ -1,4 +1,4 @@
-.container{
+.container-f{
   display: flex;
   background-color: white;
   height: 89vh;
@@ -36,8 +36,8 @@
   flex-direction: row;
   margin-top: 1%;
   margin: 0%;
-  width: 90%;
-  height: 90%;
+  width: 82%;
+  height: 82%;
   justify-content: center;
   /* padding: 5%; */
   /* align-items: center; */

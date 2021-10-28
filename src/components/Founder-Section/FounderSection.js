@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const FounderSection = () => {
   return (
-    <div className="container">
+    <div className="container-f">
       <div className="container-1">
         <div className="titulo-container">
           <h1> Founders </h1>
@@ -15,7 +15,7 @@ const FounderSection = () => {
             <img
               className="founders__item__img"
               alt="Travel"
-              src={images.img9}
+              src="https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg"
             />
             <h3> Rosa Santisteban </h3>
             <div className="social-icons-wrap">
@@ -41,7 +41,7 @@ const FounderSection = () => {
             <img
               className="founders__item__img"
               alt="Travel"
-              src={images.img9}
+              src="https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder1_kqf1ry.jpg"
             />
             <h3> Yesennia Santisteban</h3>
             <div className="social-icons-wrap">

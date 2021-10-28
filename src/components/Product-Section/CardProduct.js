@@ -8,7 +8,7 @@ function CardProduct(props) {
             <div className='cards_product'>
                 <Link className='cards_product_link' to={props.path}>
                     <figure className='cards_product_pic-wrap' data-category={props.label}>
-                        <img className='cards_product_img' alt='Travel Image' src={props.src} />
+                        <img className='cards_product_img' alt='Travel' src={props.src} />
                     </figure>
                 </Link>
             </div>   
