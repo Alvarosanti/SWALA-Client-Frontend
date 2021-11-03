@@ -63,10 +63,12 @@ const ProductOferta = () => {
                 {/* <a href="/" className="brand-wrap">
                   Los alfajores de la Lola
                 </a> */}
+                <a href="/">
                   <img
                     alt="Travel"
                     src="https://res.cloudinary.com/dr9mltwij/image/upload/v1635965970/LADLOLA/logo_small_nhtupi.png"
                   />
+                </a>
               </div>
               <div className="col-lg-6 col-sm-12">
                 <form action="/#" className="buscar">
