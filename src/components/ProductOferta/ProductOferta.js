@@ -1,43 +1,49 @@
 import React from 'react'
 import CardOferta from "./CardOferta";
 
+
 const ProductOferta = () => {
     const products = [
     {
-        img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg",
-        oferta: "2 x 1",
+        img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635914442/LADLOLA/2_p3fckj.png",
+        oferta: "-5%",
+        codigo: "152045",
         nombre: "Alfajores con manjar blanco",
         descripcion:
           "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
         precio: "30",
       },
       {
-          img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg",
+          img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635914728/LADLOLA/6_inenc4.png",
           oferta: "2 x 1",
+          codigo: "152234",
           nombre: "Alfajores con manjar blanco",
           descripcion:
             "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
           precio: "30",
         },
         {
-          img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg",
-          oferta: "2 x 1",
+          img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635914441/LADLOLA/3.1_naobsn.png",
+          oferta: "-10%",
+          codigo: "152000",
           nombre: "Alfajores con manjar blanco",
           descripcion:
             "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
           precio: "30",
         },
         {
-          img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg",
+          img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635914441/LADLOLA/1_xdls55.png",
           oferta: "2 x 1",
+          codigo: "856045",
           nombre: "Alfajores con manjar blanco",
           descripcion:
             "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
           precio: "30",
         },
         {
-          img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg",
+          img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635914441/LADLOLA/4_mayp6o.png",
           oferta: "2 x 1",
+          codigo: "120045",
           nombre: "Alfajores con manjar blanco",
           descripcion:
             "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
@@ -129,10 +135,10 @@ const ProductOferta = () => {
                 <div className="form-inline">
                   <span className="mr-md-auto">{`${products.length} productos en oferta disponibles`}</span>
                   <select className="mr-2 form-control">
-                    <option>Latest items</option>
-                    <option>Trending</option>
-                    <option>Most Popular</option>
-                    <option>Cheapest</option>
+                    <option>Torta</option>
+                    <option>Turron</option>
+                    <option>Brownie</option>
+                    <option>Alfajores</option>
                   </select>
                   <div className="btn-group">
                     <a
@@ -163,6 +169,7 @@ const ProductOferta = () => {
                       <CardOferta
                         img={data.img}
                         oferta={data.oferta}
+                        codigo={data.codigo}
                         nombre={data.nombre}
                         descripcion={data.descripcion}
                         precio={data.precio}

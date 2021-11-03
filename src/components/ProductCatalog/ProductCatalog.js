@@ -4,59 +4,59 @@ import CardProduct from "./CardProduct";
 const ProductCatalog = () => {
   const products = [
     {
-      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg",
+      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635914441/LADLOLA/5_urpzjj.png",
+      nombre: "Torta San Valentin",
+      descripcion:
+        "Fabricado con queque de vainilla, humedecido con face con leche, 10 porciones, bajo en azucar",
+      precio: "30",
+    },
+    {
+      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635914442/LADLOLA/2_p3fckj.png",
+      nombre: "Turrón Milagro",
+      descripcion:
+        "Fabricado con finos y selectos ingredientes, con trigo fortificado, zumo de frutas de membrillo y piña.",
+      precio: "30",
+    },
+    {
+      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635914441/LADLOLA/4_mayp6o.png",
+      nombre: "Torta de zanahoria",	
+      descripcion:
+        "Fabricado con  zanahoria machacada mezclada en la masa, dando una textura densa y suave al pastel.",
+      precio: "30",
+    },
+    {
+      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635914728/LADLOLA/6_inenc4.png",
       nombre: "Alfajores con manjar blanco",
       descripcion:
         "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
       precio: "30",
     },
     {
-      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg",
-      nombre: "Alfajores con manjar blanco",
+      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635912979/LADLOLA/amor1_de_oso_wlsej8.jpg",
+      nombre: "Torta amor de oso",
       descripcion:
-        "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
+        "Fabricados con queque de chocolate y relleno de fudge y manjar blanco, 12 porciones, bajo en azucar.",
       precio: "30",
     },
     {
-      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg",
-      nombre: "Alfajores con manjar blanco",
+      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1634593559/LADLOLA/Torta_promocion_2020_husslo.jpg",
+      nombre: "Torta de promocion 2020",
       descripcion:
-        "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
+        "Fabricados con tres deliciosas capas de brownie y un exquisito doble relleno de queso crema sabor a chocolate",
       precio: "30",
     },
     {
-      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg",
-      nombre: "Alfajores con manjar blanco",
+      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635913164/LADLOLA/yolita_girjfh.png",
+      nombre: "Torta cumpleañera",
       descripcion:
-        "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
+        "Fabricado con tres capas de bizcocho de leche con yogurt, con un delicioso triple relleno de queso crema y galletas. ",
       precio: "30",
     },
     {
-      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg",
-      nombre: "Alfajores con manjar blanco",
+      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635913551/LADLOLA/tortaQuincea%C3%B1era_eh3hml.png",
+      nombre: "Torta quinceañera",
       descripcion:
-        "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
-      precio: "30",
-    },
-    {
-      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg",
-      nombre: "Alfajores con manjar blanco",
-      descripcion:
-        "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
-      precio: "30",
-    },
-    {
-      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg",
-      nombre: "Alfajores con manjar blanco",
-      descripcion:
-        "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
-      precio: "30",
-    },
-    {
-      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg",
-      nombre: "Alfajores con manjar blanco",
-      descripcion:
-        "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
+        "Fabricado con tres capas de bizcocho de chocolate, con un delicioso triple relleno de queso fudge y galletas chocochips. ",
       precio: "30",
     },
   ];
