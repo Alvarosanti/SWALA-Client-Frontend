@@ -161,6 +161,14 @@ a:hover {
   padding-bottom: 40px;
 }
 
+.padding-ofertas {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .padding-top {
   padding-top: 40px;
 }
@@ -1053,7 +1061,8 @@ a[class*=card]:hover .title {
   font-size: 12px;
   line-height: 1;
   text-align: center;
-  border-radius: 3rem;
+  /* border-radius: 3rem; */
+  border-radius: 50%;
   color: #fff;
   background-color: #fa3434;
 }
