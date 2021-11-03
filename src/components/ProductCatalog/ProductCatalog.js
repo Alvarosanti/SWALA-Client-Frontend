@@ -1,7 +1,16 @@
 import React from 'react';
 import CardProduct from './CardProduct';
 
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom';
+
 const ProductCatalog = () => {
+
 	const products = [
 		{
 			img: 'https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg',
@@ -52,6 +61,7 @@ const ProductCatalog = () => {
 			precio: '30'
 		}
 	];
+
 	return (
 		<div className="App">
 			<header class="section-header">
@@ -128,6 +138,7 @@ const ProductCatalog = () => {
 					<div class="row">
 						<aside class="col-md-3">
 							<div class="card">
+								{/*categories 1*/}
 								<article class="filter-group">
 									<header class="card-header">
 										<a
@@ -138,7 +149,7 @@ const ProductCatalog = () => {
 											class=""
 										>
 											<i class="icon-control fa fa-chevron-down" />
-											<h6 class="title">Product type</h6>
+											<h6 class="title">Categorias</h6>
 										</a>
 									</header>
 									<div class="filter-content collapse show" id="collapse_1">
@@ -156,30 +167,55 @@ const ProductCatalog = () => {
 
 											<ul class="list-menu">
 												<li>
-													<a href="#">People </a>
+													<a href="#">Cakes </a>
 												</li>
 												<li>
-													<a href="#">Watches </a>
+													<a href="#">Cupcakes</a>
 												</li>
 												<li>
-													<a href="#">Cinema </a>
+													<a href="#">Alfajores</a>
 												</li>
 												<li>
-													<a href="#">Clothes </a>
-												</li>
-												<li>
-													<a href="#">Home items </a>
-												</li>
-												<li>
-													<a href="#">Animals</a>
-												</li>
-												<li>
-													<a href="#">People </a>
+													<a href="#">Brownies</a>
 												</li>
 											</ul>
 										</div>
 									</div>
 								</article>
+								{/*Oferta */}
+								<article class="filter-group">
+									<header class="card-header">
+										<a
+											href="#"
+											data-toggle="collapse"
+											data-target="#collapse_3"
+											aria-expanded="true"
+											class=""
+										>
+											<h6 class="title">Ofertas disponibles</h6>
+										</a>
+									</header>
+									<Link to="/ofertas">
+										<div class="filter-content collapse show" id="collapse_2">
+											<div class="card-body">
+												<Card sx={{ minWidth: 200 }} >
+													<CardContent>
+														<Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
+															Ofertas en Brownies
+														</Typography>
+														<Typography variant="h5" component="div">
+														</Typography>
+														<Typography sx={{ fontSize: 40 }} color="text.secondary">
+															30% <span style={{fontSize:'20px'}}> dscto </span>
+														</Typography>							
+													</CardContent>
+												</Card>
+											</div>
+										</div>
+									</Link>
+								</article>
+
+								{/*
 								<article class="filter-group">
 									<header class="card-header">
 										<a
@@ -193,6 +229,26 @@ const ProductCatalog = () => {
 											<h6 class="title">Brands </h6>
 										</a>
 									</header>
+									<div class="filter-content collapse show" id="collapse_4">
+										<div class="card-body">
+											<label class="checkbox-btn">
+												<input type="checkbox" />
+												<span class="btn btn-light"> XS </span>
+											</label>
+											<label class="checkbox-btn">
+												<input type="checkbox" />
+												<span class="btn btn-light"> SM </span>
+											</label>
+											<label class="checkbox-btn">
+												<input type="checkbox" />
+												<span class="btn btn-light"> LG </span>
+											</label>
+											<label class="checkbox-btn">
+												<input type="checkbox" />
+												<span class="btn btn-light"> XXL </span>
+											</label>
+										</div>
+									</div>
 									<div class="filter-content collapse show" id="collapse_2">
 										<div class="card-body">
 											<label class="custom-control custom-checkbox">
@@ -232,71 +288,10 @@ const ProductCatalog = () => {
 											</label>
 										</div>
 									</div>
-								</article>
-								<article class="filter-group">
-									<header class="card-header">
-										<a
-											href="#"
-											data-toggle="collapse"
-											data-target="#collapse_3"
-											aria-expanded="true"
-											class=""
-										>
-											<i class="icon-control fa fa-chevron-down" />
-											<h6 class="title">Price range </h6>
-										</a>
-									</header>
-									<div class="filter-content collapse show" id="collapse_3">
-										<div class="card-body">
-											<input type="range" class="custom-range" min="0" max="100" name="" />
-											<div class="form-row">
-												<div class="form-group col-md-6">
-													<label>Min</label>
-													<input class="form-control" placeholder="$0" type="number" />
-												</div>
-												<div class="form-group text-right col-md-6">
-													<label>Max</label>
-													<input class="form-control" placeholder="$1,0000" type="number" />
-												</div>
-											</div>
-											<button class="btn btn-block btn-primary">Apply</button>
-										</div>
-									</div>
-								</article>
-								<article class="filter-group">
-									<header class="card-header">
-										<a
-											href="#"
-											data-toggle="collapse"
-											data-target="#collapse_4"
-											aria-expanded="true"
-											class=""
-										>
-											<i class="icon-control fa fa-chevron-down" />
-											<h6 class="title">Sizes </h6>
-										</a>
-									</header>
-									<div class="filter-content collapse show" id="collapse_4">
-										<div class="card-body">
-											<label class="checkbox-btn">
-												<input type="checkbox" />
-												<span class="btn btn-light"> XS </span>
-											</label>
-											<label class="checkbox-btn">
-												<input type="checkbox" />
-												<span class="btn btn-light"> SM </span>
-											</label>
-											<label class="checkbox-btn">
-												<input type="checkbox" />
-												<span class="btn btn-light"> LG </span>
-											</label>
-											<label class="checkbox-btn">
-												<input type="checkbox" />
-												<span class="btn btn-light"> XXL </span>
-											</label>
-										</div>
-									</div>
-								</article>
+								</article>	
+*/}
+
+								{/*mas filtros  */}
 								<article class="filter-group">
 									<header class="card-header">
 										<a
@@ -348,6 +343,7 @@ const ProductCatalog = () => {
 										</div>
 									</div>
 								</article>
+
 							</div>
 						</aside>
 						<main class="col-md-9">
@@ -382,14 +378,18 @@ const ProductCatalog = () => {
 							</header>
 							{/*products*/}
 							<div class="row">
-								{
-								products.map((data) => 
+								{products.map((data) => (
 									<div class="col-md-4">
 										<figure class="card card-product-grid">
-											<CardProduct img={data.img} nombre={data.nombre} descripcion={data.descripcion} precio={data.precio}/>
+											<CardProduct
+												img={data.img}
+												nombre={data.nombre}
+												descripcion={data.descripcion}
+												precio={data.precio}
+											/>
 										</figure>
 									</div>
-								)}
+								))}
 							</div>
 							<nav class="mt-4" aria-label="Page navigation sample">
 								<ul class="pagination">
