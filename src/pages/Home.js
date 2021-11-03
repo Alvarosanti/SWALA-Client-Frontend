@@ -17,7 +17,6 @@ function Home() {
             <ProductSection />
             <FounderSection />
             <ClientTestimonial />
-            <Card />
             <Footer />
         </>
     )
