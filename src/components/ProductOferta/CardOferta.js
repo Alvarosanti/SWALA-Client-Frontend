@@ -22,7 +22,7 @@ import Divider from '@mui/material/Divider';
 
 import "./CardOferta.css";
 
-const CardOferta = ({ img, oferta, codigo, nombre, descripcion, precio }) => {
+const CardOferta = ({ img, oferta, codigo, nombre, descripcion, fechaInicio, fechaFin }) => {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -44,7 +44,9 @@ const CardOferta = ({ img, oferta, codigo, nombre, descripcion, precio }) => {
             <br />
             {descripcion}
             <br />
-            s/.<strong>{precio}</strong>
+            <br />
+            <strong>Valido desde {fechaInicio} a {fechaFin}</strong>
+            {/* Valido para la fecha {fechaInicio} hasta {fechaFin} */}
           </Typography>
         </CardContent>
         <div className="button-obtener-codigo">

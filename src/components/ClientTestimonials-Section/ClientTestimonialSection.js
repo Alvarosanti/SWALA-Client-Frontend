@@ -25,7 +25,7 @@ function ClientTestimonial(){
 							rrss="Instagram"
 						/>
 						<TestimonialItem
-							src="https://res.cloudinary.com/dr9mltwij/image/upload/v1633927405/LADLOLA/tortaQuincea%C3%B1era_qd01rp.png"
+							src="https://res.cloudinary.com/dr9mltwij/image/upload/v1635913551/LADLOLA/tortaQuincea%C3%B1era_eh3hml.png"
 							description="Descripcion del producto de alta calidad super recomendado 3."
 							rrss="Twitter"
 						/>

@@ -1,66 +1,72 @@
-import React from 'react'
+import React from "react";
 import CardOferta from "./CardOferta";
 
-
 const ProductOferta = () => {
-    const products = [
+  const products = [
     {
-        img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635914442/LADLOLA/2_p3fckj.png",
-        oferta: "-5%",
-        codigo: "152045",
-        nombre: "Alfajores con manjar blanco",
-        descripcion:
-          "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
-        precio: "30",
-      },
-      {
-          img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635914728/LADLOLA/6_inenc4.png",
-          oferta: "2 x 1",
-          codigo: "152234",
-          nombre: "Alfajores con manjar blanco",
-          descripcion:
-            "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
-          precio: "30",
-        },
-        {
-          img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635914441/LADLOLA/3.1_naobsn.png",
-          oferta: "-10%",
-          codigo: "152000",
-          nombre: "Alfajores con manjar blanco",
-          descripcion:
-            "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
-          precio: "30",
-        },
-        {
-          img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635914441/LADLOLA/1_xdls55.png",
-          oferta: "2 x 1",
-          codigo: "856045",
-          nombre: "Alfajores con manjar blanco",
-          descripcion:
-            "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
-          precio: "30",
-        },
-        {
-          img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635914441/LADLOLA/4_mayp6o.png",
-          oferta: "2 x 1",
-          codigo: "120045",
-          nombre: "Alfajores con manjar blanco",
-          descripcion:
-            "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
-          precio: "30",
-        },
-    ];
+      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635914442/LADLOLA/2_p3fckj.png",
+      oferta: "-5%",
+      codigo: "152045",
+      nombre: "-5% en turron",
+      descripcion:
+        "Te obsequiamos el 5% de descuento en la compra del 'Turron Milagroso'.",
+      fechaInicio: "01/11/2021",
+      fechaFin: "05/11/2021",
+    },
+    {
+      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635914728/LADLOLA/6_inenc4.png",
+      oferta: "2 x 1",
+      codigo: "152234",
+      nombre: "2 x 1 en alfajores",
+      descripcion:
+        "Lleva 2 'Alfajores con manjar blanco' y solo realizas el pago de 1 ",
+      fechaInicio: "01/11/2021",
+      fechaFin: "05/11/2021",
+    },
+    {
+      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635914441/LADLOLA/3.1_naobsn.png",
+      oferta: "-10%",
+      codigo: "152000",
+      nombre: "-10% en torta halloween",
+      descripcion:
+        "Te obsequiamos el 10% de descuento en la compra del 'Torta Halloween'.",
+      fechaInicio: "01/11/2021",
+      fechaFin: "05/11/2021",
+    },
+    {
+      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635914441/LADLOLA/1_xdls55.png",
+      oferta: "2 x 1",
+      codigo: "856045",
+      nombre: "2 x 1 en torta decilia",
+      descripcion: "Lleva 2 'Torta delicia' y solo realizas el pago de 1.",
+      fechaInicio: "01/11/2021",
+      fechaFin: "05/11/2021",
+    },
+    {
+      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635914441/LADLOLA/4_mayp6o.png",
+      oferta: "2 x 1",
+      codigo: "120045",
+      nombre: "2 x 1 en torta corazon",
+      descripcion: "Lleva 2 'Torta corazon' y solo realizas el pago de 1.",
+      fechaInicio: "01/11/2021",
+      fechaFin: "05/11/2021",
+    },
+  ];
 
-    return (
-        <div className="App">
+  return (
+    <div className="App">
       <header className="section-header">
         <section className="header-main border-bottom">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-2 col-4">
-                <a href="/" className="brand-wrap">
+                {/* <a href="/" className="brand-wrap">
                   Los alfajores de la Lola
-                </a>
+                </a> */}
+                  <img
+                    alt="Travel"
+                    src="https://res.cloudinary.com/dr9mltwij/image/upload/v1635965970/LADLOLA/logo_small_nhtupi.png"
+                  />
               </div>
               <div className="col-lg-6 col-sm-12">
                 <form action="/#" className="buscar">
@@ -172,7 +178,8 @@ const ProductOferta = () => {
                         codigo={data.codigo}
                         nombre={data.nombre}
                         descripcion={data.descripcion}
-                        precio={data.precio}
+                        fechaInicio={data.fechaInicio}
+                        fechaFin={data.fechaFin}
                       />
                     </figure>
                   </div>
@@ -212,6 +219,6 @@ const ProductOferta = () => {
         </div>
       </section>
     </div>
-    );
-}
-export default ProductOferta
+  );
+};
+export default ProductOferta;

@@ -17,7 +17,7 @@ function Home() {
             <ProductSection />
             <FounderSection />
             <ClientTestimonial />
-            <Card />
+            {/* <Card /> */}
             <Footer />
         </>
     )
