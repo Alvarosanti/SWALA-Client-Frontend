@@ -1,5 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import {Link} from 'react-router-dom';
+// import { GlobalState } from "../../GlobalState";
 import {Button} from '../Button-SignUp/Button';
 import './NavBar.css'
 

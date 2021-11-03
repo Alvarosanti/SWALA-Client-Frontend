@@ -81,4 +81,140 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  .oferta {
+    font-size: 800%;
+    width: 100%;
+    top: 23%;
+    left: 0%;
+   
+  }
+}
+
+@media screen and (max-width: 411px) {
+    .oferta {
+      font-size: 500%;
+      width: 89%;
+      top: 23%;
+      left: 0%;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .oferta {
+      font-size: 500%;
+      width: 100%;
+      top: 20%;
+      left: 0%;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .oferta {
+      font-size: 300%;
+      /* width: 98%; */
+      width: 10%;
+      top: 25%;
+      /* left: 0%; */
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+    .oferta {
+      font-size: 500%;
+      width: 88%;
+      top: 25%;
+      left: 0%;
+    }
+  }
+
+  @media screen and (max-width: 411px) {
+    .oferta {
+      font-size: 300%;
+      width: 60%;
+      top: 25%;
+      left: 0%;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .oferta {
+      font-size: 500%;
+      width: 98%;
+      top: 25%;
+      left: 0%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .oferta {
+      font-size: 200%;
+      width: 100%;
+      top: 13%;
+      left: 0%;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .oferta {
+      font-size: 300%;
+      width: 100%;
+      top: 20%;
+      left: 0%;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    .oferta {
+      font-size: 500%;
+      width: 100%;
+      top: 23%;
+      left: 0%;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    .oferta {
+      font-size: 500%;
+      width: 100%;
+      top: 17%;
+      left: 0%;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .oferta {
+      font-size: 350%;
+      width: 50%;
+      top: 12%;
+      left: 0%;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .oferta {
+      font-size: 400%;
+      width: 66.5%;
+      top: 25%;
+      left: 0%;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .oferta {
+      font-size: 400%;
+      width: 62.5%;
+      top: 25%;
+      left: 0%;
+    }
+  }
+
+  @media screen and (max-width: 571px) {
+    .oferta {
+      font-size: 400%;
+      width: 63%;
+      top: 25%;
+      left: 0%;
+    }
+  }
+
 /*# sourceMappingURL=responsive.css.map */
