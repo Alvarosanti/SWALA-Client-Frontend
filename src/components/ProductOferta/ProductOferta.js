@@ -136,7 +136,7 @@ const ProductOferta = () => {
                   <li className="breadcrumb-item">
                     <a href="/">Home</a>
                   </li>
-                <li className="breadcrumb-item">
+                  <li className="breadcrumb-item">
                     <a href="/products">Catalogo</a>
                   </li>
                   <li className="breadcrumb-item">
