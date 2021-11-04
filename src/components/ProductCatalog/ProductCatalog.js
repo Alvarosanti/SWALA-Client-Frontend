@@ -1,6 +1,5 @@
-import React from "react";
-import CardProduct from "./CardProduct";
-
+import React,{useEffect,useState} from 'react';
+import CardProduct from './CardProduct';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -8,140 +7,163 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
+import { orange } from '@mui/material/colors';
+import CircularProgress from '@mui/material/CircularProgress';
+import Fade from '@mui/material/Fade';
 
 const ProductCatalog = () => {
 
-  const products = [
-    {
-      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg",
-      nombre: "Alfajores con manjar blanco",
-      descripcion:
-        "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
-      precio: "30",
-    },
-    {
-      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg",
-      nombre: "Alfajores con manjar blanco",
-      descripcion:
-        "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
-      precio: "30",
-    },
-    {
-      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg",
-      nombre: "Alfajores con manjar blanco",
-      descripcion:
-        "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
-      precio: "30",
-    },
-    {
-      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg",
-      nombre: "Alfajores con manjar blanco",
-      descripcion:
-        "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
-      precio: "30",
-    },
-    {
-      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg",
-      nombre: "Alfajores con manjar blanco",
-      descripcion:
-        "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
-      precio: "30",
-    },
-    {
-      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg",
-      nombre: "Alfajores con manjar blanco",
-      descripcion:
-        "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
-      precio: "30",
-    },
-    {
-      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg",
-      nombre: "Alfajores con manjar blanco",
-      descripcion:
-        "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
-      precio: "30",
-    },
-    {
-      img: "https://res.cloudinary.com/dr9mltwij/image/upload/v1635043546/LADLOLA/founder2_xa3t6m.jpg",
-      nombre: "Alfajores con manjar blanco",
-      descripcion:
-        "Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.",
-      precio: "30",
-    },
-  ];
-  return (
-    <div className="App">
-      <header className="section-header">
-        <section className="header-main border-bottom">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-2 col-4">
-                <a href="/" className="brand-wrap">
-                  Los alfajores de la Lola
-                </a>
-              </div>
-              <div className="col-lg-6 col-sm-12">
-                <form action="/#" className="buscar">
-                  <div className="input-group w-100">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Buscar"
-                    />
-                    <div className="input-group-append">
-                      <button className="btn btn-primary" type="submit">
-                        <i className="fa fa-search"> </i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div className="col-lg-4 col-sm-6 col-12">
-                <div className="widgets-wrap float-md-right">
-                  <div className="widget-header mr-3">
-                    <a href="/#" className="icon icon-sm rounded-circle border">
-                      <i className="fa fa-shopping-cart"> </i>
-                    </a>
-                    <span className="badge badge-pill notify">0 </span>
-                  </div>
-                  <div className="widget-header icontext">
-                    <a href="/#" className="icon icon-sm rounded-circle border">
-                      <i className="fa fa-user"> </i>
-                    </a>
-                    <div className="texto">
-                      <span className="text-muted"> ㅤㅤ¡Bienvenido! </span>
-                      <div>
-                        <a href="/#"> Iniciar sesion </a> |
-                        <a href="/#"> Registrar </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </header>
+	const products = [
+		{
+			img: 'https://res.cloudinary.com/dr9mltwij/image/upload/v1635914441/LADLOLA/5_urpzjj.png',
+			nombre: 'Torta San Valentin',
+			descripcion:
+				'Fabricado con queque de vainilla, humedecido con face con leche, 10 porciones, bajo en azucar',
+			precio: '30'
+		},
+		{
+			img: 'https://res.cloudinary.com/dr9mltwij/image/upload/v1635914442/LADLOLA/2_p3fckj.png',
+			nombre: 'Turrón Milagro',
+			descripcion:
+				'Fabricado con finos y selectos ingredientes, con trigo fortificado, zumo de frutas de membrillo y piña.',
+			precio: '30'
+		},
+		{
+			img: 'https://res.cloudinary.com/dr9mltwij/image/upload/v1635914441/LADLOLA/4_mayp6o.png',
+			nombre: 'Torta de zanahoria',
+			descripcion:
+				'Fabricado con  zanahoria machacada mezclada en la masa, dando una textura densa y suave al pastel.',
+			precio: '30'
+		},
+		{
+			img: 'https://res.cloudinary.com/dr9mltwij/image/upload/v1635914728/LADLOLA/6_inenc4.png',
+			nombre: 'Alfajores con manjar blanco',
+			descripcion: 'Fabricados a mano con ingredientes selectos, tamaño regular, 12 unidades, bajo en azucar.',
+			precio: '30'
+		},
+		{
+			img: 'https://res.cloudinary.com/dr9mltwij/image/upload/v1635912979/LADLOLA/amor1_de_oso_wlsej8.jpg',
+			nombre: 'Torta amor de oso',
+			descripcion:
+				'Fabricados con queque de chocolate y relleno de fudge y manjar blanco, 12 porciones, bajo en azucar.',
+			precio: '30'
+		},
+		{
+			img:
+				'https://res.cloudinary.com/dr9mltwij/image/upload/v1634593559/LADLOLA/Torta_promocion_2020_husslo.jpg',
+			nombre: 'Torta de promocion 2020',
+			descripcion:
+				'Fabricados con tres deliciosas capas de brownie y un exquisito doble relleno de queso crema sabor a chocolate',
+			precio: '30'
+		},
+		{
+			img: 'https://res.cloudinary.com/dr9mltwij/image/upload/v1635913164/LADLOLA/yolita_girjfh.png',
+			nombre: 'Torta cumpleañera',
+			descripcion:
+				'Fabricado con tres capas de bizcocho de leche con yogurt, con un delicioso triple relleno de queso crema y galletas. ',
+			precio: '30'
+		},
+		{
+			img:
+				'https://res.cloudinary.com/dr9mltwij/image/upload/v1635913551/LADLOLA/tortaQuincea%C3%B1era_eh3hml.png',
+			nombre: 'Torta quinceañera',
+			descripcion:
+				'Fabricado con tres capas de bizcocho de chocolate, con un delicioso triple relleno de queso fudge y galletas chocochips. ',
+			precio: '30'
+		}
+	];
 
-      <section className="section-pagetop bg">
-        <div className="container">
-          <h2 className="title-page">Catalogo</h2>
-          <nav>
-            <ol className="breadcrumb text-white">
-              <li className="breadcrumb-item">
-                <a href="/">Home</a>
-              </li>
-              <li className="breadcrumb-item">
-                <a href="/products">Catalogo</a>
-              </li>
-              <li className="breadcrumb-item active" aria-current="page">
-                <a>Todos</a>
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </section>
+	const[isLoading, setIsLoading] = useState();
 
+	useEffect(()=>{
+		setIsLoading(true);
+		setTimeout(
+		function(){
+			setIsLoading(false);
+		},1500
+		);
+	},[]);
+
+	return (
+		<div className="App">
+			<header className="section-header">
+				<section className="header-main border-bottom">
+					<div className="container">
+						<div className="row align-items-center">
+							<div className="col-lg-2 col-4">
+								<a href="/" className="brand-wrap">
+									<img
+										alt="ladlolalogo"
+										src="https://res.cloudinary.com/dr9mltwij/image/upload/v1635965970/LADLOLA/logo_small_nhtupi.png"
+									/>
+								</a>
+							</div>
+							<div className="col-lg-6 col-sm-12">
+								<form action="/#" className="buscar">
+									<div className="input-group w-100">
+										<input type="text" className="form-control" placeholder="Buscar" />
+										<div className="input-group-append">
+											<button className="btn btn-primary" type="submit">
+												<i className="fa fa-search"> </i>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div className="col-lg-4 col-sm-6 col-12">
+								<div className="widgets-wrap float-md-right">
+									<div className="widget-header mr-3">
+										<a href="/#" className="icon icon-sm rounded-circle border">
+											<i className="fa fa-shopping-cart"> </i>
+										</a>
+										<span className="badge badge-pill notify">0 </span>
+									</div>
+									<div className="widget-header icontext">
+										<a href="/#" className="icon icon-sm rounded-circle border">
+											<i className="fa fa-user"> </i>
+										</a>
+										<div className="texto">
+											<span className="text-muted"> ㅤㅤ¡Bienvenido! </span>
+											<div>
+												<a href="/#"> Iniciar sesion </a> |
+												<a href="/#"> Registrar </a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</header>
+
+			<section className="section-pagetop bg">
+				<div className="container">
+					<h2 className="title-page">Catalogo</h2>
+					<nav>
+						<ol className="breadcrumb text-white">
+							<li className="breadcrumb-item">
+								<a href="/">Home</a>
+							</li>
+							<li className="breadcrumb-item">
+								<a href="/products">Catalogo</a>
+							</li>
+							<li className="breadcrumb-item active" aria-current="page">
+								<a>Todos</a>
+							</li>
+						</ol>
+					</nav>
+				</div>
+			</section>
+			<Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                    <Box sx={{ height: 10 }}>
+                      <Fade in={isLoading} unmountOnExit>
+                        <CircularProgress />
+                      </Fade>
+                    </Box>
+                </Box>
+{ 
+                  !isLoading &&
 			<section class="section-content padding-y">
 				<div class="container">
 					<div class="row">
@@ -167,7 +189,7 @@ const ProductCatalog = () => {
 												<div class="input-group">
 													<input type="text" class="form-control" placeholder="Search" />
 													<div class="input-group-append">
-														<button class="btn btn-light" type="button">
+														<button class="btn btn-primary" type="button">
 															<i class="fa fa-search" />
 														</button>
 													</div>
@@ -207,16 +229,19 @@ const ProductCatalog = () => {
 									<Link to="/ofertas">
 										<div class="filter-content collapse show" id="collapse_2">
 											<div class="card-body">
-												<Card sx={{ minWidth: 200 }} >
+												<Card sx={{ minWidth: 200 }} sx={{ bgcolor: orange[50] }}>
 													<CardContent>
-														<Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
+														<Typography
+															sx={{ fontSize: 20 }}
+															color="text.secondary"
+															gutterBottom
+														>
 															Ofertas en Brownies
 														</Typography>
-														<Typography variant="h5" component="div">
-														</Typography>
+														<Typography variant="h5" component="div" />
 														<Typography sx={{ fontSize: 40 }} color="text.secondary">
-															30% <span style={{fontSize:'20px'}}> dscto </span>
-														</Typography>							
+															30% <span style={{ fontSize: '20px' }}> dscto </span>
+														</Typography>
 													</CardContent>
 												</Card>
 											</div>
@@ -352,7 +377,6 @@ const ProductCatalog = () => {
 										</div>
 									</div>
 								</article>
-
 							</div>
 						</aside>
 						<main class="col-md-9">
@@ -433,9 +457,9 @@ const ProductCatalog = () => {
 					</div>
 				</div>
 			</section>
+}
 		</div>
 	);
-
 };
 
 export default ProductCatalog;

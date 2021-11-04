@@ -15,17 +15,17 @@ function ClientTestimonial(){
 				<div className="cards__testimonial-wrapper">
 					<ul className="cards__testimonials">
 						<TestimonialItem
-							src={img.img1}
+							src="https://res.cloudinary.com/dr9mltwij/image/upload/v1634593559/LADLOLA/Torta_Feliz_dia_Papa_a0klpv.jpg"
 							description="Descripcion del producto de alta calidad super recomendado 1."
 							rrss="Facebook"
 						/>
 						<TestimonialItem
-							src={img.img2}
+							src="https://res.cloudinary.com/dr9mltwij/image/upload/v1634593559/LADLOLA/Torta_infantil_k3okw0.jpg"
 							description="Descripcion del producto de alta calidad super recomendado 2."
 							rrss="Instagram"
 						/>
 						<TestimonialItem
-							src={img.img3}
+							src="https://res.cloudinary.com/dr9mltwij/image/upload/v1635913551/LADLOLA/tortaQuincea%C3%B1era_eh3hml.png"
 							description="Descripcion del producto de alta calidad super recomendado 3."
 							rrss="Twitter"
 						/>

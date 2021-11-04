@@ -161,12 +161,12 @@ sup {
 }
 
 a {
-  color: #3167eb;
+  color: #162447;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #1244bd;
+  color: #5e89ee;
   text-decoration: underline;
 }
 
@@ -552,24 +552,44 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+
+.container-oferta{
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  margin-left: auto;
+}
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
+  }
+  .container-oferta{
+     max-width: 1200px;
   }
 }
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
   }
+  .container-oferta{
+     max-width: 1200px;
+  }
 }
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
+  .container-oferta{
+     max-width: 1200px;
+  }
 }
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
+  }
+  .container-oferta{
+     max-width: 1200px;
   }
 }
 
@@ -2386,12 +2406,12 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #3167eb;
+  background-color: #162447;
   border-color: #3167eb;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #1650e0;
+  background-color: #5e89ee;
   border-color: #154cd4;
 }
 .btn-primary:focus, .btn-primary.focus {
@@ -2548,7 +2568,7 @@ fieldset:disabled a.btn {
 
 .btn-light {
   color: #212529;
-  background-color: #e4e4e4;
+  background-color: #161313;
   border-color: #e4e4e4;
 }
 .btn-light:hover {
@@ -4601,7 +4621,7 @@ input[type=button].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #3167eb;
+  color: #545454;
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
@@ -4630,7 +4650,7 @@ input[type=button].btn-block {
 .page-item.active .page-link {
   z-index: 1;
   color: #fff;
-  background-color: #3167eb;
+  background-color: #162447;
   border-color: #3167eb;
 }
 .page-item.disabled .page-link {

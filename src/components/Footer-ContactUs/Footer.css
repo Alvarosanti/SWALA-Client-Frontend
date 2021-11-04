@@ -131,6 +131,11 @@
     align-items: center;
     margin-bottom: 16px;
   }
+
+  .logofooter{
+    height: 40%;
+    width: 40%;
+  }
   
   .website-rights {
     color: #fff;

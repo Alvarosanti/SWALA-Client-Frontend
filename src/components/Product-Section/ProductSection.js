@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import images from "../../assets/images";
 import CardProduct from "./CardProduct";
 import "./ProductSection.css";
 
@@ -22,10 +21,10 @@ export const ProductSection = () => {
         </div>
         <div className="box_product_2">
           <div className="product">
-            <CardProduct src={images.img2} path="/products" />{" "}
+            <CardProduct src="https://res.cloudinary.com/dr9mltwij/image/upload/v1635913443/LADLOLA/tort_kwuds4.png" path="/products" />{" "}
           </div>
           <div className="product">
-            <CardProduct src={images.img3} path="/products" />{" "}
+            <CardProduct src="https://res.cloudinary.com/dr9mltwij/image/upload/v1635914728/LADLOLA/6_inenc4.png" path="/products" />{" "}
           </div>
         </div>
     </div>

@@ -29,8 +29,13 @@ function Navbar() {
         <>
             <nav className="navbar">
                 <div className="navbar-container">
-                    <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                        LADLOLA <i className="fab fa-typo3"></i>
+                    <Link to="/" className="navbar-logo logonav" onClick={closeMobileMenu}>
+                        <a href="/">
+                            <img
+                                alt="ladlolalogo"
+                                src="https://res.cloudinary.com/dzsitpxzw/image/upload/v1634182321/swala/logo_white_large_c2nnmp.png"
+                            />
+                        </a>
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
